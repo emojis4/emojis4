@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1F1B1D">
+    <title>e4zybot</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+</head>
+<body>
+    <div class="header__wrapper">
+        <header class="header__content">
+            <img src="./assets/images/diorlogo.png" alt="e4zybot" class='header__logo'>
+            <nav class="header__nav burger__menu__closed">
+                <ul class='nav__list'>
+                    <li class="nav__item" onclick='openBurgerMenu()'><a href="#main" class="nav__link">Главная</a></li>
+                    <li class="nav__item" onclick='openBurgerMenu()'><a href="#catalog1" class="nav__link">Каталог</a></li>
+                    <li class="nav__item" onclick='openBurgerMenu()'><a href="#catalog2" class="nav__link">Бестселлеры</a></li>
+                    <li class="nav__item" onclick='openBurgerMenu()'><a href="#catalog3" class="nav__link">Эксклюзив</a></li>
+                    <li class="nav__item" onclick='openBurgerMenu()'><a href="#catalog3" class="nav__link">Косметика</a></li>
+                </ul>
+                <div class="search__wrapper">
+                    <input type="text" placeholder="Поиск" class='search__input'>
+                    <img src="./assets/images/search.png" alt="Поиск" class="search__icon" onclick='openBurgerMenu()'>
+                </div>
+            </nav>
+            <a href="#"><img src="./assets/images/heart.png" alt="" class="heart__icon"></a>
+            <div class='shop__burger'>
+                <a href="#"><img src="./assets/images/shop.png" alt="" class="shop__icon"></a>
+                <div class="burger">
+                    <div class="burger__line1"></div>
+                    <div class="burger__line2"></div>
+                    <div class="burger__line3"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="section1__wrapper" id="main">
+            <section class="section1 content">
+                <div class="section1__left">
+                    <p class="section1__paragraph">Эксклюзивная колекция</p>
+                    <h1 class="section1__header">ЛЮКСОВЫЕ <br>АРОМАТЫ ОТ <span class="sec1__yellow">TYDU4</span></h1>
+                    <div class="sec1__buttons">
+                        <a href="#catalog1" class="sec1__button1">Перейти в каталог</a>
+                        <a href="#catalog1" class="sec1__button2">Подробнее</a>
+                    </div>
+                    <a href="#catalog1"><img src="./assets/images/arrowdown.png" alt="вниз" class="arrow__down"></a>
+                </div>
+                <div class="section1__right">
+                    <div class="section1__right__item1">
+                        <img src="./assets/images/item1.png" alt="Товар" class='sec1__item__img'>
+                        <span class="section1__right__item1__text">7.990</span>
+                        <img src="./assets/images/unique.png" alt="Уникальная коллекция" class="sec1__unique">
+                    </div>
+                    <div class="section1__right__item2">
+                        <div class="section1__right__item21">
+                            <img src="./assets/images/item2.png" class='sec1__item__img' alt="Товар">
+                            <span class="sec1__price">7.990</span>
+                            <img src="./assets/images/star.png" alt="Звезда" class="sec1__star">
+                        </div>
+                        <div class="section1__right__item22">
+                            <img src="./assets/images/item3.png" class='sec1__item__img' alt="Товар">
+                            <span class="sec1__price">7.990</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section2__wrapper" id="catalog1">
+            <section class="section2 catalog content">
+                <h2 class="catalog__header">БЕСТСЕЛЛЕРЫ</h2>
+                <div class="slider" id="slider1">
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type1">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="under__slider">
+                    <a href="#" class="open__button">Открыть каталог</a>
+                    <div class="slider__buttons">
+                        <img src="./assets/images/buttonleft.png" alt="Влево" class="button__left"  onclick="swipe(1, -1)">
+                        <img src="./assets/images/buttonright.png" alt="Вправо" class="button__right"  onclick="swipe(1, 1)">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section3__wrapper" id="catalog2">
+            <section class="section3 catalog content">
+                <h2 class="catalog__header">ЭКСКЛЮЗИВ</h2>
+                <div class="slider" id="slider2">
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                    <div class="slider__duo__items">
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                        <div class="slider__item slider__item__type2">
+                            <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                            <div class="slider__heart__price">
+                                <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                <span class="slider__price">7.990</span>
+                            </div>
+                            <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="under__slider">
+                    <a href="#" class="open__button">Открыть каталог</a>
+                    <div class="slider__buttons">
+                        <img src="./assets/images/buttonleft.png" alt="Влево" class="button__left" onclick="swipe(2, -1)">
+                        <img src="./assets/images/buttonright.png" alt="Вправо" class="button__right" onclick="swipe(2, 1)">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section4__wrapper" id="catalog3">
+            <section class="section4 content">
+                <h2 class="sec4__header">ПРИРОДНЫЙ УХОД ЗА <br>ВАШЕЙ КОЖЕЙ</h2>
+                <div class="sec4__wrapper">
+                    <div class="sec4__woman"></div>
+                    <div class="sec4__catalog">
+                        <div class="slider__duo__item">
+                            <div class="slider__item slider__item__type3">
+                                <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                                <div class="slider__heart__price">
+                                    <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                    <span class="slider__price">7.990</span>
+                                </div>
+                                <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                            </div>
+                            <div class="slider__item slider__item__type3">
+                                <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                                <div class="slider__heart__price">
+                                    <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                    <span class="slider__price">7.990</span>
+                                </div>
+                                <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                            </div>
+                        </div>
+                        <div class="slider__duo__item">
+                            <div class="slider__item slider__item__type3">
+                                <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                                <div class="slider__heart__price">
+                                    <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                    <span class="slider__price">7.990</span>
+                                </div>
+                                <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                            </div>
+                            <div class="slider__item slider__item__type3">
+                                <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                                <div class="slider__heart__price">
+                                    <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                    <span class="slider__price">7.990</span>
+                                </div>
+                                <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                            </div>
+                        </div>
+                        <div class="slider__duo__item">
+                            <div class="slider__item slider__item__type3">
+                                <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                                <div class="slider__heart__price">
+                                    <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                    <span class="slider__price">7.990</span>
+                                </div>
+                                <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                            </div>
+                            <div class="slider__item slider__item__type3">
+                                <img src="./assets/images/product.png" alt="Продукт" class="slider__product">
+                                <div class="slider__heart__price">
+                                    <img src="./assets/images/heart2.png" alt="Избранное" class="slider__heart">
+                                    <span class="slider__price">7.990</span>
+                                </div>
+                                <img src="./assets/images/plus.png" alt="Добавить в корзину" class="slider__item__plus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="under__slider sec4__buttons">
+                    <a href="#" class="open__button">Открыть каталог</a>
+                    <div class="slider__buttons">
+                        <img src="./assets/images/buttonleft.png" alt="Влево" class="button__left"  onclick="swipe(3, -1)">
+                        <img src="./assets/images/buttonright.png" alt="Вправо" class="button__right"  onclick="swipe(3, 1)">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer__wrapper">
+            <footer class="footer content">
+                <div class="footer__upper">
+                    <img src="./assets/images/diorlogo.png" alt="Диор" class="footer__logo">
+                    <div class="footer__ultra__wrapper">
+                        <div class="footer__items__wrapper">
+                            <span class="footer__header__item">Бестселлеры</span>
+                            <span class="footer__item">Большой текст</span>
+                            <span class="footer__item">Текст</span>
+                            <span class="footer__item">Маленький текст</span>
+                            <span class="footer__item">Ещё текст</span>
+                        </div>
+                        <div class="footer__items__wrapper">
+                            <span class="footer__header__item">Эксклюзив</span>
+                            <span class="footer__item">Большой текст</span>
+                            <span class="footer__item">Текст</span>
+                            <span class="footer__item">Маленький текст</span>
+                            <span class="footer__item">Ещё текст</span>
+                        </div>
+                        <div class="footer__items__wrapper">
+                            <span class="footer__header__item">Косметика</span>
+                            <span class="footer__item">Большой текст</span>
+                            <span class="footer__item">Текст</span>
+                            <span class="footer__item">Маленький текст</span>
+                            <span class="footer__item">Ещё текст</span>
+                        </div>
+                        <div class="footer__items__wrapper">
+                            <span class="footer__header__item">Контакты</span>
+                            <span class="footer__item">Большой текст</span>
+                            <span class="footer__item">Текст</span>
+                            <span class="footer__item">Маленький текст</span>
+                            <span class="footer__item">Ещё текст</span>
+                        </div>
+                    </div>
+                    <img src="./assets/images/arrowup.png" alt="Вверх" class="footer__button">
+                </div>
+                <div class="footer__lower">
+                    <span class="footer__number">+7 (937) 333-55-33</span>
+                    <div class="footer__soc__wrapper">
+                        <a href="https://t.me/e4zybot" target="_blank"><img src="./assets/images/instagram.png" alt="Инстаграм" class="soc__item"></a>
+                        <a href="https://t.me/e4zybot" target="_blank"><img src="./assets/images/twitter.png" alt="Твиттер" class="soc__item"></a>
+                        <a href="https://t.me/e4zybot" target="_blank"><img src="./assets/images/facebook.png" alt="Фейсбук" class="soc__item"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
