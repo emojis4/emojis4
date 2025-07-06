@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1c0800">
+    <title>e4zybot</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+</head>
+<body>
+    <div class="header__wrapper">
+        <header class="header__content">
+            <span class="logo header__logo">e4zybot</span>
+            <nav class="header__nav">
+                <ul class='nav__ul'>
+                    <li class="nav__item buttonAnimation"><a href="#main" class="nav__link">Home</a></li>
+                    <li class="nav__item buttonAnimation"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item buttonAnimation"><a href="#events" class="nav__link">Events</a></li>
+                    <li class="nav__item buttonAnimation"><a href="#about" class="nav__link">About us</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="#" class="login__button buttonAnimation">Log in</a>
+                <img src="./assets/images/shop.png" alt="shop" class="shop__icon buttonAnimation">
+                <div class="burger">
+                    <div class="burger__line1"></div>
+                    <div class="burger__line2"></div>
+                    <div class="burger__line3"></div>
+                </div>
+            </div>
+        </header>
+    </div>    
+    <nav class="burger__menu menu__closed">
+        <a href="#main" onclick='openMenu()' class="nav__link">Home</a>
+        <a href="#menu" onclick='openMenu()' class="nav__link">Menu</a>
+        <a href="#events" onclick='openMenu()' class="nav__link">Events</a>
+        <a href="#about" onclick='openMenu()' class="nav__link">About us</a>
+        <a href="#" onclick='openMenu()' class="login__button buttonAnimation">Log in</a>
+        <img src="./assets/images/shop.png" onclick='openMenu()' alt="shop" class="shop__icon buttonAnimation">
+    </nav>
+    <main>
+        <section class="section1 content" id="main">
+            <div class="section1__left">
+                <h1 class="header">The Fastest <img src="./assets/images/arrow.png" alt="arrow" class="fastest__arrow"> <br>Pizza <img src="./assets/images/Lightning 2.png" alt="Lightning" class="lightning"> Delivery</h1>
+                <p class="paragraph">We will deliver juicy pizza for your family in 30 minutes, if the courier is late - <span class="white-color">pizza is free!</span></p>
+                <p class="paragraph">Cooking process:</p>
+                <a href="https://www.youtube.com/watch?v=T3AHBe0I0yc" target="_blank"><img src="./assets/images/cookingprocess.png" alt="Cooking process" class="cookingprocess buttonAnimation"></a>
+                <div class="strange__button__wrapper">
+                    <div class="strange__button">
+                        <span class="strange__button__text__selected">To order</span>
+                        <span class="strange__button__text">Pizza-Menu</span>
+                        <div class="strange__button__ellipse strange__button__ellipse__left"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1__right">
+                <img src="./assets/images/pizza1.png" alt="Pizza" class="section1__absolute1">
+                <img src="./assets/images/pizza.png" alt="Pizza" class='sec1__pizza'>
+                <img src="./assets/images/fries1.png" alt="French fries" class="section1__absolute2">
+            </div>
+        </section>
+        <section class="section2 content" id='menu'>
+            <h2 class="header text-center menu__arrow__wrapper">Menu <img src="./assets/images/arrow2.png" alt="Arrow" class="menu__arrow"></h2>
+            <div class="section2__buttons">
+                <input class='input__pizza_types' type="radio" name='pizza_types' id='pizza_type1' value='all'>
+                <label class='label__pizza_types buttonAnimation' for="pizza_type1">Show All</label>
+                <input class='input__pizza_types' type="radio" name='pizza_types' id='pizza_type2' value='meat'>
+                <label class='label__pizza_types buttonAnimation' for="pizza_type2">Meat</label>
+                <input class='input__pizza_types' type="radio" name='pizza_types' id='pizza_type3' value="vegetarian">
+                <label class='label__pizza_types buttonAnimation' for="pizza_type3">Vegetarian</label>
+                <input class='input__pizza_types' type="radio" name='pizza_types' id='pizza_type4' value='sea_products'>
+                <label class='label__pizza_types buttonAnimation' for="pizza_type4">Sea products</label>
+                <input class='input__pizza_types' type="radio" name='pizza_types' id='pizza_type5' value="mushroom">
+                <label class='label__pizza_types buttonAnimation' for="pizza_type5">Mushroom</label>
+            </div>
+            <div class="pizzas__catalog1">
+                <div class="pizza__duo__item">
+                    <div class="pizza__item" id='Italian'>
+                        <img src="./assets/images/Italian.png" alt="Italian" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Italian</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes2" id='size12'>
+                            <label class='pizza__item__size' for="size12">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes2" id='size22' checked>
+                            <label class='pizza__item__size' for="size22">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes2" id='size32'>
+                            <label class='pizza__item__size' for="size32">33</label>
+                        </div>
+                        <span class="price__now">8.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients2" id='additional2'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional2">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">8,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">8.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                    <div class="pizza__item" id="Venecia">
+                        <img src="./assets/images/Venecia.png" alt="Venecia" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Venecia</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes3" id='size13'>
+                            <label class='pizza__item__size' for="size13">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes3" id='size23' checked>
+                            <label class='pizza__item__size' for="size23">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes3" id='size33'>
+                            <label class='pizza__item__size' for="size33">33</label>
+                        </div>
+                        <span class="price__now">7.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients3" id='additional3'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional3">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">7,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">7.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                </div>
+                <div class="pizza__duo__item">
+                    <div class="pizza__item" id="Meat">
+                        <img src="./assets/images/Meat.png" alt="Meat" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Meat</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes4" id='size14'>
+                            <label class='pizza__item__size' for="size14">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes4" id='size24' checked>
+                            <label class='pizza__item__size' for="size24">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes4" id='size34'>
+                            <label class='pizza__item__size' for="size34">33</label>
+                        </div>
+                        <span class="price__now">9.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients4" id='additional4'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional4">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">9,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">9.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                    <div class="pizza__item" id='Cheese'>
+                        <img src="./assets/images/Cheese.png" alt="Cheese" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Cheese</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes" id='size1'>
+                            <label class='pizza__item__size' for="size1">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes" id='size2' checked>
+                            <label class='pizza__item__size' for="size2">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes" id='size3'>
+                            <label class='pizza__item__size' for="size3">33</label>
+                        </div>
+                        <span class="price__now">8.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients" id='additional'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">8,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">8.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="big__button">MOST POPULAR PIZZA</div>
+            <div class="pizzas__catalog2">
+                <div class="pizza__duo__item">
+                    <div class="pizza__item" id='Argentina'>
+                        <img src="./assets/images/Argentina.png" alt="Argentina" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Argentina</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes5" id='size15'>
+                            <label class='pizza__item__size' for="size15">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes5" id='size25' checked>
+                            <label class='pizza__item__size' for="size25">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes5" id='size35'>
+                            <label class='pizza__item__size' for="size35">33</label>
+                        </div>
+                        <span class="price__now">7.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients5" id='additional5'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional5">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">7,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">7.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                    <div class="pizza__item" id="Gribnaya">
+                        <img src="./assets/images/Gribnaya.png" alt="Gribnaya" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Gribnaya</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes6" id='size16'>
+                            <label class='pizza__item__size' for="size16">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes6" id='size26' checked>
+                            <label class='pizza__item__size' for="size26">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes6" id='size36'>
+                            <label class='pizza__item__size' for="size36">33</label>
+                        </div>
+                        <span class="price__now">6.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients6" id='additional6'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional6">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">6,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">6.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                </div>
+                <div class="pizza__duo__item">
+                    <div class="pizza__item" id='Tomato'>
+                        <img src="./assets/images/Tomato.png" alt="Tomato" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Tomato</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes7" id='size17'>
+                            <label class='pizza__item__size' for="size17">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes7" id='size27' checked>
+                            <label class='pizza__item__size' for="size27">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes7" id='size37'>
+                            <label class='pizza__item__size' for="size37">33</label>
+                        </div>
+                        <span class="price__now">7.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients7" id='additional7'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional7">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">7,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">7.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                    <div class="pizza__item" id='Italian_x2'>
+                        <img src="./assets/images/Italian x2.png" alt="Italian x2" class="pizza__item__image">
+                        <h3 class="pizza__item__header">Italian x2</h3>
+                        <p class="pizza__item__paragraph">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+                        <div class="pizza__item__sizes__wrapper">
+                            <input value='0.8' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes8" id='size18'>
+                            <label class='pizza__item__size' for="size18">22</label>
+                            <input value='1' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes8" id='size28' checked>
+                            <label class='pizza__item__size' for="size28">28</label>
+                            <input value='1.2' class='input__pizzaItem_sizes' type="radio" name="pizzaItem_sizes8" id='size38'>
+                            <label class='pizza__item__size' for="size38">33</label>
+                        </div>
+                        <span class="price__now">8.35</span>
+                        <div class="pizza__item__additionalIngredients buttonAnimation">
+                            <input class='input__pizzaAdditionalIngredients' type="checkbox" name="pizzaAdditionalIngredients8" id='additional8'>
+                            <label class='pizzaAdditionalIngredients__label' for="additional8">+ Ingridients</label>
+                        </div>
+                        <div class="pizza__item__price__wrapper">
+                            <div class="pizza__item__price">8,35<sup class='price__sup'>$</sup></div>
+                            <div class="pizza__item__amount__wrapper">
+                                <span class="original__price">8.35</span>
+                                <div class="button__plus__minus minus__btn buttonAnimation">-</div>
+                                <span class="pizza__item__amount">1</span>
+                                <div class="button__plus__minus__active plus__btn buttonAnimation">+</div>
+                            </div>
+                        </div>
+                        <a class="pizza__item__order buttonAnimation">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3 content" id='events'>
+            <div class="menu__wrapper1">
+                <div class="menus1__left">
+                    <div class="menu__item__small menu__item1">
+                        <h3 class="menu__item__header">HOW WE COOKING</h3>
+                        <a href="#" class="menu__item__button buttonAnimation">More</a>
+                        <img src="./assets/images/decor1.png" alt="Bacon" class="decor__image1">
+                    </div>
+                    <div class="menu__item__small menu__item2">
+                        <h3 class="menu__item__header">OUR BLOG</h3>
+                        <a href="#" class="menu__item__button buttonAnimation">More</a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="header">Events</h2>
+                    <p class="paragraph">There are regular events in our pizzeria that will allow you to eat delicious food for a lower price!</p>
+                </div>
+            </div>
+            <div class="menu__wrapper2">
+                <div class="menu__item__big menu__item3">
+                    <h3 class="menu__item__header">TWO PIZZA FOR 1 PRICE</h3>
+                    <a href="#" class="menu__item__button buttonAnimation">More</a>
+                </div>
+                <div class="menu__item__big menu__item4">
+                    <h3 class="menu__item__header">KITCHEN TOUR</h3>
+                    <a href="#" class="menu__item__button buttonAnimation">More</a>
+                    <img src="./assets/images/decor2.png" alt="Shawarma" class="decor__image2">
+                </div>
+            </div>
+            <div class="menu__wrapper3">
+                <div class="menu__item__small menu__item5">
+                    <h3 class="menu__item__header">FREE COFFEE FOR 3 PIZZA</h3>
+                    <a href="#" class="menu__item__button buttonAnimation">More</a>
+                    <img src="./assets/images/decor3.png" alt="Coffee" class="decor__image3">
+                </div>
+                <div class="menu__item__small menu__item6">
+                    <h3 class="menu__item__header">OUR INSTAGRAM</h3>
+                    <a href="#" class="menu__item__button buttonAnimation">More</a>
+                </div>
+                <div class="menu__item__small menu__item7">
+                    <h3 class="menu__item__header">WHERE ARE YOU CHOOSE US?</h3>
+                    <a href="#" class="menu__item__button buttonAnimation">More</a>
+                </div>
+            </div>
+        </section>
+        <section class="section4 content" id="about">
+            <div class="section4__text">
+                <h2 class="header">About us</h2>
+                <p class="paragraph">In just a couple of years, we have opened 6 outlets in different cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in other major cities of Russia.</p>
+                <img src="./assets/images/pizzas.png" alt="Pizzas" class="sec4__pizzas">
+                <p class="paragraph">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
+            </div>
+            <div class="section4__right">
+                <img src="./assets/images/pizza1.png" alt="Pizza" class="section4__absolute1">
+                <img src="./assets/images/lastpizza.png" alt="Pizza" class="last__pizza">
+                <img src="./assets/images/fries1.png" alt="French fries" class="section4__absolute2">
+            </div>
+        </section>
+    </main>
+    <div class="footer__wrapper">
+        <footer class="footer content">
+            <div class="footer__upper">
+                <span class="logo footer__logo">e4zybot</span>
+                <div class="all__footer__items">
+                    <div class="footer__items">
+                        <a href="#" class="footer__header__item">Home</a>
+                        <a href="#" class="footer__item">To Order</a>
+                        <a href="#" class="footer__item">About us</a>
+                        <a href="#" class="footer__item">Events</a>
+                        <a href="#" class="footer__item">Menu</a>
+                    </div>
+                    <div class="footer__items">
+                        <a href="#" class="footer__header__item">Events</a>
+                        <a href="#" class="footer__item">3 Pizza 1 Free Coffee</a>
+                        <a href="#" class="footer__item">2 Pizza for 1 Price</a>
+                        <a href="#" class="footer__item">Kitchen Tour</a>
+                    </div>
+                    <div class="footer__items">
+                        <a href="#" class="footer__header__item">Menu</a>
+                        <a href="#" class="footer__item">Show All</a>
+                        <a href="#" class="footer__item">Seaproducts</a>
+                        <a href="#" class="footer__item">Vegan</a>
+                        <a href="#" class="footer__item">Meat</a>
+                    </div>
+                    <div class="footer__items">
+                        <a href="#" class="footer__header__item">About Us</a>
+                        <a href="#" class="footer__item">Our History</a>
+                        <a href="#" class="footer__item">Why We?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__lower">
+                <span class="footer__number">+7 (937) 333-55-33</span>
+                <div class="footer__social__networks">
+                    <a href="https://t.me/e4zybot" target="_blank"><img src="./assets/images/instagram.png" alt="instagram" class="social__network buttonAnimation"></a>
+                    <a href="https://t.me/e4zybot" target="_blank"><img src="./assets/images/twitter.png" alt="Twitter" class="social__network buttonAnimation"></a>
+                    <a href="https://t.me/e4zybot" target="_blank"><img src="./assets/images/facebook.png" alt="Facebook" class="social__network buttonAnimation"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
