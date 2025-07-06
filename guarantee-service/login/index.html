@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainZuru</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <div class="header__wrapper">
+        <header class="header content">
+            <a href="../" class="logo">BrainZuru</a>
+            <nav class="header__nav">
+                <a href="../" class="nav__item button__animation">Главная</a>
+                <a href="../reviews/" class="nav__item button__animation">Отзывы</a>
+                <a href="../faq/" class="nav__item button__animation">FAQ</a>
+            </nav>
+            <div class="login__buttons unlogined__wrapper">
+                <div class="empty__button__border empty__button__border-radius1 button__animation">
+                    <div class="empty__button__wrapper empty__button__border-radius1">
+                        <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+                    </div>
+                </div>
+                <a href="../register/" class="blue__button register__button2 button__animation">Зарегистрироваться</a>
+            </div>
+            <div class="new__deal__wrapper logined__wrapper display__none">
+                <a href="../profile/" class="profile__link button__animation">
+                    <img src="../assets/images/default-user1.png" alt="Профиль">
+                </a>
+                <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+            </div>
+            <div class="burger">
+                <div class="burger__line1"></div>
+                <div class="burger__line2"></div>
+                <div class="burger__line3"></div>
+            </div>
+        </header>
+    </div>
+    <div class="burger__menu display__none">
+        <a href="../" class="nav__item margin10-0 button__animation">Главная</a>
+        <a href="../reviews/" class="margin10-0 nav__item button__animation">Отзывы</a>
+        <a href="../faq/" class="margin10-0 nav__item button__animation">FAQ</a>
+        <div class="burger__login__buttons unlogined__wrapper">
+            <div class="margin10-0 empty__button__border empty__button__border-radius1 button__animation">
+                <div class="empty__button__wrapper empty__button__border-radius1">
+                    <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+                </div>
+            </div>
+            <a href="../register/" class="margin10-0 blue__button register__button2 button__animation">Зарегистрироваться</a>
+        </div>
+        <div class="margin10-0 burger__new__deal__wrapper logined__wrapper display__none">
+            <a href="../profile/" class="profile__link button__animation">
+                <img src="../assets/images/default-user1.png" alt="Профиль">
+            </a>
+            <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+        </div>
+    </div>
+    <main>
+        <section class="loginregistersection content">
+            <form action="" class='loginRegisterForm loginForm' id="loginregisterform">
+                <h2 class="h-header">Вход</h2>
+                <label class='l-header' for="login">Логин</label>
+                <input class='input p-paragraph' type="text" placeholder="Почта или юзернейм" name="login" id='login' required>
+                <label class='l-header' for="password">Пароль</label>
+                <input class='input p-paragraph' type="password" placeholder="Введите пароль" name="password" id="password" required>
+                <span class="l-header">Войти</span>
+                <input type="submit" class="blue__button loginregisterbutton" value="Авторизоваться">
+                <p id="request-status" class="request__error p-paragraph"></p>
+                <p class="p-paragraph">Нет аккаунта? <a href="../register/" class='changeLoginRegisterLink'>Зарегистрируйтесь</a></p>
+                <p class="p-paragraph">Забыли пароль? <a href="../settings/" class='changeLoginRegisterLink'>Восстановите!</a></p>
+            </form>
+            <div class="loginregister__image__wrapper"></div>
+        </section>
+    </main>
+    <noscript class="noscript">
+        <p class="l-header">Сайт не работает<br>без JavaScript 😕</p>
+    </noscript>
+    <script src="../assets/scripts/burger.js"></script>
+    <script type="module" src="../assets/scripts/loginregister.js"></script>
+</body>
+</html>

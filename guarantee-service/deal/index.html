@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainZuru</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <div class="header__wrapper">
+        <header class="header content">
+            <a href="../" class="logo">BrainZuru</a>
+            <nav class="header__nav">
+                <a href="../" class="nav__item button__animation">Главная</a>
+                <a href="../reviews/" class="nav__item button__animation">Отзывы</a>
+                <a href="../faq/" class="nav__item button__animation">FAQ</a>
+            </nav>
+            <div class="login__buttons unlogined__wrapper display__none">
+                <div class="empty__button__border empty__button__border-radius1 button__animation">
+                    <div class="empty__button__wrapper empty__button__border-radius1">
+                        <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+                    </div>
+                </div>
+                <a href="../register/" class="blue__button register__button2 button__animation">Зарегистрироваться</a>
+            </div>
+            <div class="new__deal__wrapper logined__wrapper">
+                <a href="../profile/" class="profile__link button__animation">
+                    <img src="../assets/images/default-user1.png" alt="Профиль">
+                </a>
+                <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+            </div>
+            <div class="burger">
+                <div class="burger__line1"></div>
+                <div class="burger__line2"></div>
+                <div class="burger__line3"></div>
+            </div>
+        </header>
+    </div>
+    <div class="burger__menu display__none">
+        <a href="../" class="nav__item margin10-0 button__animation">Главная</a>
+        <a href="../reviews/" class="margin10-0 nav__item button__animation">Отзывы</a>
+        <a href="../faq/" class="margin10-0 nav__item button__animation">FAQ</a>
+        <div class="burger__login__buttons unlogined__wrapper display__none">
+            <div class="margin10-0 empty__button__border empty__button__border-radius1 button__animation">
+                <div class="empty__button__wrapper empty__button__border-radius1">
+                    <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+                </div>
+            </div>
+            <a href="../register/" class="margin10-0 blue__button register__button2 button__animation">Зарегистрироваться</a>
+        </div>
+        <div class="margin10-0 burger__new__deal__wrapper logined__wrapper">
+            <a href="../profile/" class="profile__link button__animation">
+                <img src="../assets/images/default-user1.png" alt="Профиль">
+            </a>
+            <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+        </div>
+    </div>
+    <div class="sendReviewAboutDeal display__none" id="sendReviewAboutDeal">
+        <h2 class="h-header">Оставьте отзыв о сделке</h2>
+        <h3 class="l-header">Поставьте оценку</h3>
+        <div class="review__wrapper">
+            <span class="m-header review__number" id="reviewAmount">4,0</span>
+            <div class="stars__wrapper">
+                <input type="radio" class="inputStar" id="inputStar1" name="inputStars" value="1">
+                <label for="inputStar1">
+                    <svg class='star1 star starYellow' fill="currentColor">
+                        <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                    </svg>
+                </label>
+                <input type="radio" class="inputStar" id="inputStar2" name="inputStars" value="2">
+                <label for="inputStar2">
+                    <svg class='star1 star starYellow' fill="currentColor">
+                        <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                    </svg>
+                </label>
+                <input type="radio" class="inputStar" id="inputStar3" name="inputStars" value="3">
+                <label for="inputStar3">
+                    <svg class='star1 star starYellow' fill="currentColor">
+                        <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                    </svg>
+                </label>
+                <input type="radio" class="inputStar" id="inputStar4" name="inputStars" value="4" checked>
+                <label for="inputStar4">
+                    <svg class='star1 star starYellow' fill="currentColor">
+                        <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                    </svg>
+                </label>
+                <input type="radio" class="inputStar" id="inputStar5" name="inputStars" value="5">
+                <label for="inputStar5">
+                    <svg class='star1 star starGray' fill="currentColor">
+                        <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+        <h3 class="l-header">Напишите отзыв</h3>
+        <textarea id='reviewContent' name="" cols="30" rows="10" class="reviewTextarea p-paragraph" placeholder="Напишите отзыв о сделке"></textarea>
+        <div class="sendreview__buttons">
+            <span class="blue__button sendreview__button button__animation" id="dealRevirewYes">Отправить</span>
+            <span class="p-paragraph gray__button button__animation" id="dealRevirewNo">Не сейчас</span>
+        </div>
+    </div>
+    <div class="areusure-modal display__none" id="status-modal">
+        <h2 class="m-header">Вы уверены?</h2>
+        <p class="p-paragraph areusure-modal-text">Если вы устанавливаете статус, его нельзя будет изменить!</p>
+        <div class="sendreview__buttons">
+            <span class="blue__button sendreview__button button__animation" id="statusYes">Да</span>
+            <span class="p-paragraph gray__button button__animation" id="statusNo">Отмена</span>
+        </div>
+    </div>
+    <main class='content'>
+        <section class="infoAboutDeal">
+            <h2 class="h-header dealpanel__header">Информация о сделке</h2>
+            <div class="deal__item preload">
+                <h3 class="l-header" id="deal-name"></h3>
+                <div class="deal__item__info1">
+                    <p class="p-paragraph deal__usernamefrom" id='deal-customer'></p>
+                    <p class="p-paragraph deal__usernamefrom" id="deal-seller"></p>
+                </div>
+                <div class="deal__item__info2">
+                    <span class="deal__price" id="deal-price"></span>
+                    <span class="deal__status p-paragraph" id="deal-status"></span>
+                </div>
+            </div>
+        </section>
+        <div class="dealpanel__buttonsAndStatuses-wrapper">
+            <section class="dealpanel__buttons preload">
+                <h3 class="l-header">Действия</h3>
+                <span class="blue__button dealpanel__button button__animation" id="endDeal">Завершить сделку</span>
+                <span class="blue__button dealpanel__button button__animation" id="cancelDeal">Отменить сделку</span>
+                <span class="red-background dealpanel__button button__animation" id="reportDeal">Пожаловаться</span>
+            </section>
+            <section class="dealpanel__statuses preload">
+                <h3 class="l-header">Статусы</h3>
+                <div>
+                    <p class="p-paragraph">Продавец
+                        <a class="dealstatus-link" id="status-deal-seller" href=""></a>:<br>
+                        <span class="dealStatus" id="seller-deal-status">завершает сделку</span>
+                    </p>
+                    <p class="p-paragraph">Покупатель
+                        <a class="dealstatus-link" id="status-deal-customer" href=""></a>:<br>
+                        <span class="dealStatus" id="customer-deal-status">завершает сделку</span>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <section class="dealChat preload">
+            <h2 class="h-header dealpanel__header">Чат сделки</h2>
+            <div class="chat__wrapper">
+                <div class="chat__top">
+                    <a class="l-header userImageLeft" id='chat-recipient'></a>
+                </div>
+                <div class="chat__itself">
+                    <div class="chat__itself2" id="messages__wrapper"></div>
+                </div>
+                <div class="chat__bottom">
+                    <div class="chatInput__wrapper">
+                        <input type="text" class="chat__input p-paragraph" id="chatInput" placeholder="Введите сообщение">
+                        <span class="blue__button chat__button button__animation" id='sendMessageButton'>Отправить</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <noscript class="noscript">
+        <p class="l-header">Сайт не работает<br>без JavaScript 😕</p>
+    </noscript>
+    <script src="../assets/scripts/burger.js"></script>
+    <script type="module" src="../assets/scripts/isLoginedRedirect.js"></script>
+    <script type="module" src="../assets/scripts/handleDeal.js"></script>
+</body>
+</html>

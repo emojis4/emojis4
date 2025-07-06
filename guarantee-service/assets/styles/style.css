@@ -1,0 +1,1913 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: #6DD5ED #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background:#ffffff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background:#6DD5ED;
+} 
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    margin-top: 90px;
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #4ed8f8;
+    font-weight: 500;
+}
+
+.dealstatus-link{
+    font-size: 1.5rem;
+    color: #47dcfa;
+}
+
+.dealStatus{
+    color: #000000;
+}
+
+.dealpanel__statuses .p-paragraph{
+    margin: 2rem 0 0 0;
+}
+
+.logo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 31.1666px;
+    line-height: 38px;
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.blue__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__button2{
+    font-size: 1.57rem;
+    line-height: 1.92rem;
+    border-radius: 15px;
+    padding: 15px 37px;
+    margin-left: 15px;
+}
+
+.header__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.nav__item{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #6E6E6E;
+}
+
+.red-background{
+    background: #EA2F2F;
+}
+
+.green-background{
+    background: #62EB57;
+}
+
+.nav__item:hover{
+    color: #081D22;
+}
+
+.button__animation{
+    transition: .4s;
+    cursor: pointer;
+}
+
+.button__animation:hover{
+    transform: scale(1.1);
+}
+
+.nav__item__active{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #081D22;
+}
+
+.content{
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav{
+    width: 27.2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.64rem;
+    line-height: 138.9%;
+    color: #081D22;
+}
+
+.l-header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.42rem;
+    color: #081D22;
+}
+
+.m-header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.97rem;
+    line-height: 3.64rem;
+    color: #081D22;
+}
+
+.section1{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1__text{
+    width: 640px;
+}
+
+.p-paragraph{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.57rem;
+    line-height: 2.42rem;
+    color: #6E6E6E;
+}
+
+.register__button{
+    font-size: 1.71rem;
+    line-height: 152.9%;
+    padding: 18px 32px;
+    border-radius: 19px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.register__button3{
+    font-size: 1.71rem;
+    line-height: 152.9%;
+    padding: 18px 32px;
+    border-radius: 19px;
+}
+
+.empty__button__text{
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    display: block;
+    flex-shrink: 0;
+}
+
+.empty__button__text1{
+    padding: 18px 44px;
+    font-size: 1.71rem;
+    line-height: 152.9%;
+}
+
+.empty__button__wrapper{
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.empty__button__border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    padding: 2px;
+    width: fit-content;
+    height: fit-content;
+    flex-shrink: 0;
+}
+
+.empty__button__border-radius1{
+    border-radius: 19px;
+}
+
+.section1__buttons{
+    margin-top: 44px;
+    display: flex;
+    gap: 20px;
+}
+
+.section1__card{
+    width: 500px;
+    transform: scale(1.25) translate(7%, 11%);
+}
+
+.newdeal__button{
+    font-size: 1.57rem;
+    line-height: 1.92rem;
+    padding: 15px 33px;
+    border-radius: 15px;
+}
+
+.new__deal__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.profile__link{
+    position: relative;
+    z-index: 3;
+    left: 25px;
+}
+
+.gradient__text{
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.starYellow{
+    color: #FFDA16;
+}
+
+.starGray{
+    color: #CECECE;
+}
+
+.star{
+    width: 40px;
+    height: 40px;
+}
+
+.startdeal__button{
+    font-size: 1.57rem;
+    line-height: 1.92rem;
+    padding: 15px 32px;
+    border-radius: 15px;
+    margin-right: 18px;
+}
+
+.empty__button__border-radius2{
+    border-radius: 10px;
+}
+
+.empty__button__text2{
+    padding: 5px 10px;
+}
+
+.userinfosection{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.25);
+    border-radius: 42.25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 41px;
+    box-sizing: border-box;
+}
+
+.userinfosection__left{
+    margin-right: 30px;
+}
+
+
+.userinfosection__statistics1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.userinfosection__statistics1 span{
+    margin-right: 30px;
+}
+
+.userinfosection__statistics2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feedbacks__wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userinfosection__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.review__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.userinfosection__right{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.feedback__wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.feedback__image{
+    margin-right: 10px;
+}
+
+.review__number{
+    margin-right: 15px;
+}
+
+.deal__item{
+    width: 500px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.2);
+    border-radius: 42.25px;
+    box-sizing: border-box;
+    padding: 26px 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.deals__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.deals__wrapper2, .reviews__wrapper2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px 15px;
+}
+
+.deals__history .h-header{
+    margin-bottom: 20px;
+}
+
+.deal__status__info{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.deal__status__process{
+    color: #6E6E6E;
+}
+
+.deal__price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.42rem;
+    line-height: 4.21rem;
+    color: #081D22;
+}
+
+.deal__status__canceled{
+    color: #EA2F2F;
+}
+
+
+.input{
+    border: 1.6px solid #6E6E6E;
+    border-radius: 15px;
+    padding: 10px 15px 10px 19px;
+}
+
+.loginRegisterForm{
+    width: 510px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.2);
+    border-radius: 42.25px;
+    box-sizing: border-box;
+    padding: 50px 43px;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 663px;
+}
+
+.createdealForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.2);
+    border-radius: 42.25px;
+    box-sizing: border-box;
+    padding: 50px 43px;
+    max-width: 465px;
+}
+
+.userinfosection__profile-edit__img{
+    height: 47px;
+    margin: 0 5px;
+}
+
+.userinfosection__profile-edit{
+    margin-left: 50px;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 814px;
+}
+
+.loginregisterbutton{
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.71rem;
+    line-height: 2.07rem;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+.changeLoginRegisterLink{
+    font-weight: 500;
+    color: #6E6E6E;
+}
+
+.loginregister__image__wrapper{
+    background-image: url('../images/gradientsquare.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 510px;
+    filter: drop-shadow(0px 4px 61px rgba(0, 0, 0, 0.25));
+    border-radius: 42.25px;
+}
+
+.loginregistersection{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.request__error{
+    color: #EA2F2F;
+    font-size: 1.42rem;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+    max-width: 100%;
+}
+
+.error__image{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.request__success{
+    color: #62EB57;
+    font-size: 1.42rem;
+    margin: 10px 0 0 0;
+}
+
+.review__item{
+    width: 616px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.2);
+    border-radius: 42.25px;
+    box-sizing: border-box;
+    padding: 26px 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.review__item .p-paragraph{
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.blue__button-save-avatar{
+    padding: 15px 33px;
+    flex-grow: 0;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+.settings__avatar-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.settings__avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.settings-avatar-buttons-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    gap: 15px;
+}
+
+.settings-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-item .m-header{
+    margin-bottom: 20px;
+}
+
+.reviews__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.empty__button__text3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.57rem;
+    line-height: 1.92rem;
+    padding: 15px 37px;
+}
+
+.balance__wrapper{
+    display: flex;
+    align-items: flex-end;
+}
+
+#file{
+    display: none;
+}
+
+.settings-change-mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 200px;
+}
+
+.settings-items-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+
+.settings-change-password{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 100px;
+}
+
+.plus__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.85rem;
+    padding: 0 15px;
+    border-radius: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 10px 0 20px;
+}
+
+.empty__button__text4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.57rem;
+    line-height: 1.92rem;
+    padding: 15px 20px;
+}
+
+.login__buttons{
+    display: flex;
+}
+
+.footer__login__buttons{display: flex;}
+
+.display__none{
+    display: none
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.advantage__item__image{
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.advantage__item{
+    width: 320px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.mobile__userphoto{
+    width: 108px;
+    border-radius: 10px;
+}
+
+.mobile__userinfo1__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile__userinfo1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.mobileuserinfosection{
+    width: 330px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.mobile__userstar__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.advantages__wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.25);
+    border-radius: 42.25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3__card{
+    width: 450px;
+    transform: scale(1.3) translate(5%, 10%);
+}
+
+.section3__text{
+    width: 700px;
+}
+
+.section2 .h-header{
+    padding: 30px 0;
+}
+
+.section1__text .h-header{
+    margin-bottom: 35px;
+}
+
+.section3{
+    margin-top: 150px;
+}
+
+.section3__text .h-header{
+    margin-bottom: 30px;
+}
+
+.section3__text .p-paragraph{
+    margin: 20px 0 0 0;
+}
+
+.section4__text .p-paragraph{
+    padding: 20px 0 40px 0;
+}
+
+.advantage__item h3{
+    margin: -10px 0 10px 0;
+}
+
+.section4{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section4__text{
+    width: 450px;
+}
+
+.footer__nav{
+    width: 27.2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.footer{
+    margin-top: 100px;
+    padding: 20px 0 20px 0;
+}
+
+.footer__wrapper{
+    background-color: #F2F2F2;
+}
+
+.faq__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.faq__megawrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer__new__deal__wrapper{
+   margin-left: -25px;
+}
+
+details {
+    color: #333;
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    margin-bottom: .5rem;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+  
+summary {
+    padding: 1rem;
+    display: block;
+    background: #fff;
+    padding-left: 3.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.section4__card{
+    width: 550px;
+    transform: translate(0%, -10%);
+}
+
+summary:before {
+    content: '';
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    top: 1.3rem;
+    left: 1.3rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+details[open] > summary:before {
+    transform: rotate(90deg);
+}
+
+
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+.burger{
+    display: none;
+    position: relative;
+    height: 16px;
+    width: 33px;
+}
+
+.burger__line1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    transition: .4s;
+}
+.burger__line2{
+    top: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    transition: .4s;
+}
+.burger__line3{
+    top: 16px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    transition: .4s;
+}
+
+.burger__opened .burger__line1{
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.burger__opened .burger__line2{
+    width: 0;
+}
+
+.burger__opened .burger__line3{
+    transform: rotate(135deg);
+    top: 8px;
+}
+
+.burger__menu{
+    width: 85vw;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 20px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 9;
+}
+
+.burger__new__deal__wrapper{
+    display: flex;
+}
+
+.footer__new__deal__wrapper{
+    display: flex;
+}
+
+.margin10-0{
+    margin: 15px 0;
+}
+
+.burger__login__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__balance{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #081D22;
+}
+
+.deal__usernamefrom{
+    margin-right: 24px;
+}
+
+.feedback__image{
+    width: 45px;
+}
+
+.mobileuserinfosection{
+    display: none;
+}
+
+.selectInput{
+    background:none;
+    -webkit-appearance: none;
+}
+
+.searchInput__wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.17);
+    border-radius: 17px;
+    display: flex;
+    overflow: hidden;
+    width: 731px;
+    height: 66px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 48px 0 36px 0;
+}
+
+.searchInput{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 0 0 17px;
+}
+
+.chat__input{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 0 0 17px;
+}
+
+.chat__button{
+    width: 203px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.57rem;
+    line-height: 2.42rem;
+    color: #FFFFFF;
+}
+
+.chat__top span{
+    padding-bottom: 0.5em;
+}
+
+.chat__top{
+    box-sizing: border-box;
+    padding: 30px 0 10px 100px;
+}
+
+.recipient-message__wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.17);
+    border-radius: 34px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 360px;
+    margin: 15px 0;
+    word-break: break-all;
+}
+
+.my-message__wrapper{
+    background: #6DD5ED;
+    background: linear-gradient(287.57deg, #6DD5ED 32.69%, #2193B0 122.53%);
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.17);
+    border-radius: 34px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 360px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.57rem;
+    line-height: 2.42rem;
+    color: #FFFFFF;
+    margin: 15px 0 15px auto;
+    white-space:pre-wrap;
+    word-break:break-word;
+}
+
+.chat__itself{
+    width: 100%;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 0 20px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.chat__itself2{
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 80px;
+    overflow-x: visible;
+}
+
+.chat__bottom{
+    padding: 10px 0 10px 0;
+}
+
+.chatInput__wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.17);
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 4px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.userImageLeft{
+    position: relative;
+    display: block;
+}
+
+.userImageLeft::before{
+    width: 53px;
+    height: 53px;
+    background: url('../images/default-user1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -10px;
+    bottom: -25px;
+    transform: translate(-100%, -50%);
+    content: " ";
+    display: block;
+}
+
+.chat__top .userImageLeft::before{
+    transform: translate(-100%, -26%);
+}
+
+.margin-top30{
+    margin-top: 25px;
+}
+
+.inputSubmit{
+    padding: 15px 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.57rem;
+    line-height: 1.92rem;
+    color: #FFFFFF;
+    padding: 15px 36px;
+    border-radius: 15px;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    cursor: pointer;
+}
+
+.grayscale{
+    filter: grayscale(1);
+    pointer-events: none;
+    cursor: default;
+}
+
+.searchresult__image{
+    width: 55px;
+    margin-right: 12px;
+}
+
+.searchresult__item{
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.searchresults__wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.17);
+    border-radius: 17px;
+    padding: 2px 20px;
+    overflow: hidden;
+    min-height: 100px;
+    width: 731px;
+    box-sizing: border-box;
+}
+
+.dealRequest__button{
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.59rem;
+    line-height: 1.92rem;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.preload{
+    position: relative;
+}
+
+.preload::after{
+    width: 100%;
+    height: 100%;
+    animation: preloadAnimation 1s infinite alternate;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.preload-text{
+    text-indent: -9999px;  
+    opacity: 0.7;
+    animation: preloadAnimation 1s infinite alternate;
+    width: 100%;
+    margin-bottom: 0.25em;
+    border-radius: 0.125em;
+}
+
+.skeleton-text:last-child{
+    margin-bottom: 0;
+    width: 80%;
+}
+
+.chat__wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.25);
+    border-radius: 42.25px;
+    box-sizing: border-box;
+}
+
+.dealpanel__header{
+    margin: 0 0 40px 0;
+}
+
+.infoAboutDeal, .dealChat{
+    margin-bottom: 30px;
+}
+
+.dealpanel__buttons{
+    padding: 38px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.25);
+    border-radius: 42.25px;
+    margin: 0 0 20px 0;
+    width: fit-content;
+    margin-right: 15px;
+}
+
+.noscript{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal__item__info2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.inputStar{
+    display: none;
+}
+
+.dealpanel__buttonsAndStatuses-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.dealpanel__statuses{
+    padding: 38px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.25);
+    border-radius: 42.25px;
+    margin: 0 0 30px 0;
+    max-width: 350px;
+    width: fit-content;
+    box-sizing: border-box;
+    min-height: 0;
+    height: 100%;
+}
+
+.dealpanel__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.57rem;
+    line-height: 2.42rem;
+    color: #FFFFFF;
+    text-align: left;
+    display: block;
+    width: fit-content;
+    padding: 12px 20px;
+    border-radius: 15px;
+    margin: 12px 0;
+}
+
+.userinfosection__avatar{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.sendreview__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.57rem;
+    line-height: 2.42rem;
+    color: #FFFFFF;
+    width: fit-content;
+    padding: 14px 40px;
+    border-radius: 15px;
+}
+
+.gray__button{
+    border: 1.6px solid #6E6E6E;
+    border-radius: 15px;
+    padding: 14px 40px;
+    flex-grow: 0;
+    height: fit-content;
+    margin-left: 12px;
+}
+
+.sendReviewAboutDeal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 28px 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.2);
+    border-radius: 42.25px;
+    z-index: 10;
+}
+
+.reviewTextarea{
+    border: 1.6px solid #6E6E6E;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 19px;
+    margin: 24px 0 24px 0;
+    resize: none;
+    height: 249px;
+    width: 95%;
+}
+
+.sendreview__buttons{
+    display: flex;
+    align-items: center;
+}
+
+.sendReviewAboutDeal .review__wrapper{
+    margin: 16px 0;
+}
+
+.sendReviewAboutDeal .h-header{
+    margin: 0 0 16px 0;
+}
+
+.mobile__userinfo2{
+    display: flex;
+}
+
+.areusure-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+    padding: 28px 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.2);
+    border-radius: 42.25px;
+    z-index: 10;
+    width: 25rem;
+}
+
+.areusure-modal-text{
+    padding: 1rem 0;
+}
+
+.userinfo-pagination-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+
+
+@keyframes preloadAnimation {
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+@media (max-width: 1400px){
+    html{
+        font-size: 11px;
+    }
+    .searchInput__wrapper{
+        width: 600px;
+    }
+    .searchresults__wrapper{
+        width: 600px;
+    }
+    .createdealForm{
+        height: 600px;
+        padding:  20px 30px 0px 30px;
+    }
+    .deal__item{
+        width: 400px;
+        height: 170px;
+        padding: 20px 30px;
+    }
+    .review__item{
+        width: 49%;
+        height: 240px;
+        padding: 20px 30px;
+    }
+    .userinfosection{
+        padding: 20px;
+    }
+    .content{
+        width: 1000px;
+    }
+    .nav__item, .nav__item__active{
+        font-size: 18px;
+    }
+    .section4__card{
+        width: 450px;
+    }
+    .section1__card{
+        width: 400px;
+        transform: scale(1.2) translate(10%, 10%);
+    }
+    .section3__card{
+        width: 400px;
+        transform: scale(1.3) translate(10%, 10%);
+    }
+    .section1__text .h-header{
+        margin-bottom: 15px;
+    }
+    .section3__text .h-header{
+        margin-bottom: 20px;
+    }
+    .section1__buttons{
+        margin-top: 25px;
+    }
+    .section3__text .p-paragraph{
+        margin-top: 15px;
+    }
+    .loginRegisterForm{
+        height: 550px;
+        width: 450px;
+    }
+    .loginregister__image__wrapper{
+        width: 450px;
+    }
+    .userinfosection__profile-edit__img{
+        height: 40px;
+        margin: 0 4px;
+    }
+    .userinfosection__profile-edit{
+        margin-left: 10px;
+    }
+    .startdeal__button{
+        padding: 10px 20px;
+    }
+    .plus__button{
+        padding: 0px 10px;
+    }
+    .empty__button__text4{
+        padding: 10px 20px;
+    }
+    .feedback__image{
+        width: 35px;
+        margin-right: 5px;
+    }
+    .userinfosection__avatar{
+        height: 260px;
+        width: 260px;
+    }
+    .deals__wrapper{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1100px){
+    .userinfosection__profile-edit__img{
+        height: 22px;
+    }
+    .dealpanel__buttonsAndStatuses-wrapper{
+        margin-bottom: 25px;
+    }
+    .plus__button{
+        margin: 0 5px;
+    }
+    .review__number{
+        margin-right: 2px;
+    }
+    html{
+        font-size: 10px;
+    }
+    .createdealForm{
+        height: 540px;
+    }
+    .searchInput__wrapper{
+        width: 500px;
+    }
+    .searchresults__wrapper{
+        width: 500px;
+    }
+    .review__item{
+        width: 450px;
+        height: 220px;
+    }
+    .deals__history .h-header{
+        text-align: center;
+    }
+    .deals__wrapper, .reviews__wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .userinfosection__statistics1{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .userinfosection__statistics1 span{
+        margin-right: 15px;
+    }
+    .userinfosection__left{
+        margin-right: 50px;
+    }
+    .review__wrapper{
+        margin-bottom: 15px;
+    }
+    .balance__wrapper{
+        width: 70%;
+    }
+    .content{
+        width: 800px;
+    }
+    .register__button3{
+        padding: 12px 20px;
+    }
+    .register__button{
+        padding: 12px 20px;
+    }
+    .register__button2{
+        padding: 12px 20px;
+    }
+    .empty__button__text1{
+        padding: 12px 20px;
+    }
+    .empty__button__text2{
+        padding: 12px 20px;
+    }
+    .empty__button__text3{
+        padding: 12px 20px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .header__nav, .footer__nav{
+        width: 30%;
+    }
+    .advantage__item__image{
+        width: 140px;
+    }
+    .advantage__item{
+        width: 200px;
+        height: 300px;
+    }
+    .section4__card{
+        width: 400px;
+    }
+    .section3__card{
+        width: 350px;
+        transform: scale(1.35) translate(10%, 10%);
+    }
+    .section1__text{
+        width: 500px;
+    }
+    .section4__text{
+        width: 300px;
+    }
+    .loginRegisterForm{
+        width: 380px;
+    }
+    .loginregister__image__wrapper{
+        width: 380px;
+    }
+
+
+}
+
+@media (max-width: 900px){
+    .gray__button, .sendreview__button{
+        padding: 8px 14px;
+    }
+    .sendReviewAboutDeal{
+        width: 70vw;
+    }
+    .chat__button{
+        width: 140px;
+        height: 40px;
+    }
+    .startdeal__button{
+        margin: 10px 0;
+    }
+    .inputSubmit{
+        padding: 11px 36px;
+    }
+    .searchInput__wrapper{
+        height: 50px;
+    }
+    .createdealForm{
+        margin: 0 auto;
+    }
+    .balance__wrapper{
+        margin: 10px 0 0 0;
+    }
+    .feedbacks__wrapper{
+        margin: 10px 0 0 0;
+    }
+    .deal__usernamefrom{
+        margin-right: 10px;
+    }
+    .star{
+        transform: scale(0.65);
+    }
+    .userinfosection{
+        display: none;
+    }
+    .footer__upper{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 190px;
+    }
+    .footer__nav{
+        width: 60%;
+    }
+    .footer__login__buttons{
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: space-between;
+    }
+    .footer__login__buttons .empty__button__border, .register__button2{
+        margin: 0 0 10px 0;
+    }
+    .section4__text .p-paragraph{
+        padding: 15px 0;
+    }
+    html{
+        font-size: 9px;
+    }
+    .content{
+        width: 85vw;
+    }
+    .section1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .section3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section4{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .advantage__item{
+        height: 250px;
+    }
+    .section3__text{
+        width: 500px;
+    }
+
+    .section4__text{
+        width: 500px;
+    }
+    .section4__text.text-right{
+        text-align: left;
+    }
+    .register__button{
+        margin-left: 0;
+    }
+    .section1__card{
+        transform: none;
+        width: 400px;
+        margin-bottom: 15px;
+    }
+    .section3__card{
+        margin-top: 15px;
+        transform: none;
+        width: 400px;
+    }
+    .section4__card{
+        transform: none;
+        width: 400px;
+        margin-top: 15px;
+    }
+    .section1{
+        margin-top: 0;
+    }
+    .header__nav{
+        display: none;
+    }
+    .login__buttons{
+        display: none;
+    }
+    .new__deal__wrapper{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .loginregister__image__wrapper{
+        display: none;
+    }
+    .loginRegisterForm{
+        margin: 0 auto;
+    }
+    .mobileuserinfosection{
+        display: block;
+        margin-top: 15px;
+    }
+    .dealpanel__buttons, .dealpanel__statuses{
+        padding: 28px 25px;
+    }
+}
+
+@media (max-width: 600px){
+    .chat__itself{
+        height: 400px;
+    }
+    .deal__item__wrapper-link{
+        width: 100%;
+    }
+    .sendReviewAboutDeal{
+        width: 85vw;
+        padding: 20px 20px;
+    }
+    .chatInput__wrapper{
+        width: 100%;
+    }
+    .chat__bottom{
+        padding: 0;
+    }
+    .deal__item{
+        width: 100%;
+    }
+    .section3, .section4{
+        margin-top: 70px;
+    }
+    .section1{
+        margin-bottom: 70px;
+    }
+    .faq__megawrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq__wrapper{
+        width: 100%;
+    }
+    .searchInput__wrapper{
+        width: 100%;
+    }
+    .searchresults__wrapper{
+        width: 100%;
+    }
+    .deal__status__info{
+        margin: 0;
+    }
+    .deal__usernamefrom{
+        margin-right: 5px;
+    }
+    .advantages__wrapper{
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px 30px;
+    }
+    .section3__text{
+        width: 100%;
+    }
+    .section1__text{
+        width: 100%;
+    }
+    .section4__text{
+        width: 100%;
+    }
+    .section1__card{
+        width: 95%;
+    }
+    .section3__card{
+        width: 95%;
+    }
+    .section4__card{
+        width: 95%;
+    }
+    .footer__nav{
+        width: 90%;
+    }
+    .footer__login__buttons{
+        width: 90%;
+    }
+    .loginRegisterForm{
+        width: 100%;
+    }
+    .recipient-message__wrapper{
+        width: 100%;
+    }
+    .my-message__wrapper{
+        width: 100%;
+    }
+    .chat__itself2{
+        padding: 0 5px;
+    }
+    .chat__itself2 .userImageLeft::before{
+        display: none;
+    }
+    .section1__buttons{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .chat__top{
+        padding: 30px 0 10px 85px;
+    }
+    .settings__avatar-wrapper{
+        flex-direction: column;
+    }
+    .section1__card{
+        width: 100%;
+    }
+    .section3__card{
+        width: 100%;
+    }
+    .section4__card{
+        width: 100%;
+    }
+    .section1__buttons{
+        flex-direction: column;
+    }
+    .register__button3{
+        width: fit-content;
+    }
+    .footer__nav{
+        width: 100%;
+    }
+    .footer__login__buttons{
+        width: 100%;
+    }
+    .mobileuserinfosection{
+        width: 85vw;
+    }
+}
+
+.display__none{
+    display: none
+}

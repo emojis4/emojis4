@@ -1,0 +1,1 @@
+export const siteLink = 'http://localhost';

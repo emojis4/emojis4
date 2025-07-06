@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainZuru</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <div class="header__wrapper">
+        <header class="header content">
+            <a href="../" class="logo">BrainZuru</a>
+            <nav class="header__nav">
+                <a href="../" class="nav__item button__animation">Главная</a>
+                <a href="../reviews/" class="nav__item button__animation">Отзывы</a>
+                <a href="../faq/" class="nav__item button__animation">FAQ</a>
+            </nav>
+            <div class="login__buttons unlogined__wrapper display__none">
+                <div class="empty__button__border empty__button__border-radius1 button__animation">
+                    <div class="empty__button__wrapper empty__button__border-radius1">
+                        <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+                    </div>
+                </div>
+                <a href="../register/" class="blue__button register__button2 button__animation">Зарегистрироваться</a>
+            </div>
+            <div class="new__deal__wrapper logined__wrapper">
+                <a href="../profile/" class="profile__link button__animation">
+                    <img src="../assets/images/default-user1.png" alt="Профиль">
+                </a>
+                <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+            </div>
+            <div class="burger">
+                <div class="burger__line1"></div>
+                <div class="burger__line2"></div>
+                <div class="burger__line3"></div>
+            </div>
+        </header>
+    </div>
+    <div class="burger__menu display__none">
+        <a href="../" class="nav__item margin10-0 button__animation">Главная</a>
+        <a href="../reviews/" class="margin10-0 nav__item button__animation">Отзывы</a>
+        <a href="../faq/" class="margin10-0 nav__item button__animation">FAQ</a>
+        <div class="burger__login__buttons unlogined__wrapper display__none">
+            <div class="margin10-0 empty__button__border empty__button__border-radius1 button__animation">
+                <div class="empty__button__wrapper empty__button__border-radius1">
+                    <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+                </div>
+            </div>
+            <a href="../register/" class="margin10-0 blue__button register__button2 button__animation">Зарегистрироваться</a>
+        </div>
+        <div class="margin10-0 burger__new__deal__wrapper logined__wrapper">
+            <a href="../profile/" class="profile__link button__animation">
+                <img src="../assets/images/default-user1.png" alt="Профиль">
+            </a>
+            <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+        </div>
+    </div>
+    <main>
+        <section class="userinfosection content">
+            <div class="userinfosection__left preload">
+                <img src="../assets/images/default-user2.png" alt="Аватар" class="userinfosection__avatar" id="avatar2">
+            </div>
+            <div class="userinfosection__right">
+                <h2 class="h-header preload-text">Личный кабинет</h2>
+                <div class="userinfosection__statistics1 preload">
+                    <span class="l-header" id="login"></span>
+                    <span class="p-paragraph gradient__text" id="level"></span>
+                    <span class="l-header userinfo__statisctics">Статистика: <span class="p-paragraph" id="todayDate"></span></span>
+                </div>
+                <div class="userinfosection__statistics2 preload">
+                    <div class="review__wrapper">
+                        <span class="m-header review__number" id='reviewAverage'></span>
+                        <div class="stars__wrapper">
+                            <svg class='star1 star starGray' fill="currentColor">
+                                <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                            </svg> 
+                            <svg class='star2 star starGray' fill="currentColor">
+                                <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                            </svg> 
+                            <svg class='star3 star starGray' fill="currentColor">
+                                <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                            </svg> 
+                            <svg class='star4 star starGray' fill="currentColor">
+                                <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                            </svg> 
+                            <svg class='star5 star starGray' fill="currentColor">
+                                <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                            </svg> 
+                        </div>
+                    </div>
+                    <div class="feedbacks__wrapper preload">
+                        <div class="feedback1__wrapper feedback__wrapper">
+                            <img src="../assets/images/feedback1.png" alt="Завершено сделок" class="feedback1__image feedback__image">
+                            <span class="feedback1__text m-header" id="successDeals"></span>
+                        </div>
+                        <div class="feedback2__wrapper feedback__wrapper">
+                            <img src="../assets/images/feedback2.png" alt="Общее количество сделок" class="feedback2__image feedback__image">
+                            <span class="feedback2__text m-header" id="dealsCount"></span>
+                        </div>
+                        <div class="feedback3__wrapper feedback__wrapper">
+                            <img src="../assets/images/feedback3.png" alt="Сорвано сделок" class="feedback3__image feedback__image">
+                            <span class="feedback1__text m-header" id="cancelDeals"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="userinfosection__buttons preload">
+                    <a href="" class="blue__button startdeal__button button__animation" id="startDeal1">Начать сделку</a>
+                </div>
+            </div>
+        </section>
+        <section class="mobileuserinfosection">
+            <div class="mobile__userinfo1 preload">
+                <div class="mobile__userinfo1__left">
+                    <img src="../assets/images/default-user2.png" alt="Аватар" class="mobile__userphoto" id="avatar">
+                </div>
+                <div class="mobile__userinfo1__right">
+                    <span class="l-header" id="login2"></span>
+                    <span class="p-paragraph gradient__text" id="level2"></span>
+                    <div class="mobile__userstar__wrapper">
+                        <span class="m-header review__number" id='reviewAverage2'></span>
+                        <svg class='star starYellow' fill="currentColor">
+                            <path d="M16.6039 2.79402C17.5032 0.0260372 21.4192 0.0260415 22.3186 2.79403L24.745 10.2619C25.1472 11.4998 26.3008 12.3379 27.6024 12.3379H35.4546C38.365 12.3379 39.5751 16.0622 37.2205 17.7729L30.868 22.3883C29.815 23.1534 29.3743 24.5094 29.7766 25.7473L32.203 33.2152C33.1024 35.9832 29.9343 38.2849 27.5797 36.5742L21.2272 31.9588C20.1742 31.1938 18.7483 31.1938 17.6953 31.9588L11.3427 36.5742C8.98812 38.2849 5.82005 35.9832 6.71942 33.2152L9.14589 25.7473C9.5481 24.5094 9.10748 23.1534 8.05447 22.3883L1.70191 17.7729C-0.652677 16.0622 0.557425 12.3379 3.46786 12.3379H11.3201C12.6216 12.3379 13.7752 11.4998 14.1774 10.2619L16.6039 2.79402Z" />
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <a href="" class="blue__button startdeal__button button__animation preload" id="startDeal2">Начать сделку</a> 
+            <div class="mobile__userinfo2 preload">
+                <span class="l-header">Статистика: <span class="p-paragraph" id="todayDate2"></span></span>
+            </div>
+            <div class="feedbacks__wrapper preload">
+                <div class="feedback1__wrapper feedback__wrapper">
+                    <img src="../assets/images/feedback1.png" alt="Завершено сделок" class="feedback1__image feedback__image">
+                    <span class="feedback1__text m-header" id="successDeals2"></span>
+                </div>
+                <div class="feedback2__wrapper feedback__wrapper">
+                    <img src="../assets/images/feedback2.png" alt="Общее количество сделок" class="feedback2__image feedback__image">
+                    <span class="feedback2__text m-header" id="dealsCount2"></span>
+                </div>
+                <div class="feedback3__wrapper feedback__wrapper">
+                    <img src="../assets/images/feedback3.png" alt="Сорвано сделок" class="feedback3__image feedback__image">
+                    <span class="feedback1__text m-header" id="cancelDeals2"></span>
+                </div>
+            </div>
+        </section>
+        <section class="deals__history content">
+            <a href="" id="deals-link">
+                <h2 class="h-header margin-top30 preload-text">История сделок</h2>
+            </a>
+            <div class="deals__wrapper" id="deals__wrapper">
+
+            </div>
+        </section>
+        <section class="deals__history content">
+            <a href="" id="reviews-link">
+                <h2 class="h-header margin-top30 preload-text">Отзывы</h2>
+            </a>
+            <div class="reviews__wrapper" id="reviews__wrapper">
+
+            </div>
+        </section>
+    </main>
+    <noscript class="noscript">
+        <p class="l-header">Сайт не работает<br>без JavaScript 😕</p>
+    </noscript>
+    <script src="../assets/scripts/burger.js"></script>
+    <script type="module" src="../assets/scripts/isLoginedRedirect.js"></script>
+    <script type='module' src="../assets/scripts/searchUser.js"></script>
+</body>
+</html>

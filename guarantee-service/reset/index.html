@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainZuru</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicons/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+<div class="header__wrapper">
+  <header class="header content">
+    <a href="../" class="logo">BrainZuru</a>
+    <nav class="header__nav">
+      <a href="../" class="nav__item button__animation">Главная</a>
+      <a href="../reviews/" class="nav__item button__animation">Отзывы</a>
+      <a href="." class="nav__item button__animation">FAQ</a>
+    </nav>
+    <div class="login__buttons unlogined__wrapper">
+      <div class="empty__button__border empty__button__border-radius1 button__animation">
+        <div class="empty__button__wrapper empty__button__border-radius1">
+          <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+        </div>
+      </div>
+      <a href="../register/" class="blue__button register__button2 button__animation">Зарегистрироваться</a>
+    </div>
+    <div class="new__deal__wrapper logined__wrapper">
+      <a href="../profile/" class="profile__link button__animation">
+        <img src="../assets/images/default-user1.png" alt="Профиль">
+      </a>
+      <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+    </div>
+    <div class="burger">
+      <div class="burger__line1"></div>
+      <div class="burger__line2"></div>
+      <div class="burger__line3"></div>
+    </div>
+  </header>
+</div>
+<div class="burger__menu display__none">
+  <a href="../" class="nav__item margin10-0 button__animation">Главная</a>
+  <a href="../reviews/" class="margin10-0 nav__item button__animation">Отзывы</a>
+  <a href="." class="margin10-0 nav__item__active button__animation">FAQ</a>
+  <div class="burger__login__buttons unlogined__wrapper">
+    <div class="margin10-0 empty__button__border empty__button__border-radius1 button__animation">
+      <div class="empty__button__wrapper empty__button__border-radius1">
+        <a href="../login/" class="empty__button__text empty__button__text3">Войти</a>
+      </div>
+    </div>
+    <a href="../register/" class="margin10-0 blue__button register__button2 button__animation">Зарегистрироваться</a>
+  </div>
+  <div class="margin10-0 burger__new__deal__wrapper logined__wrapper">
+    <a href="../profile/" class="profile__link button__animation">
+      <img src="../assets/images/default-user1.png" alt="Профиль">
+    </a>
+    <a href="../search/" class="blue__button newdeal__button button__animation">Поиск</a>
+  </div>
+</div>
+<main>
+  <section class="settings__section content">
+    <h2 class="h-header">Восстановление пароля</h2>
+    <div class="settings-items-wrapper">
+      <div class="settings-item">
+        <h3 class="m-header">Изменить пароль</h3>
+        <div class="settings-change-password">
+          <input class="input" placeholder="Пароль" type="password" name="password" id="password">
+          <div class="blue__button blue__button-save-avatar button__animation" id="reset-password">Сохранить</div>
+        </div>
+        <p class="request__error" id="request__error1"></p>
+        <p class="request__success" id="request__success1"></p>
+      </div>
+    </div>
+  </section>
+</main>
+<noscript class="noscript">
+  <p class="l-header">Сайт не работает<br>без JavaScript 😕</p>
+</noscript>
+<script src="../assets/scripts/burger.js"></script>
+<script src="../assets/scripts/isLoginHide.js"></script>
+<script src="../assets/scripts/reset.js" type="module"></script>
+</body>
+</html>
