@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#35C66B">
+    <title>e4zybot</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+</head>
+<body>
+    <div class="header__wrapper">
+        <div class="content">
+            <header class='header__content'>
+                <span class="starbucks__logo">e4zybot </span>
+                <nav class="header__nav burger__menu__none">
+                    <ul>
+                        <li class='header__li' onclick="showBurgerMenu()"><a href="#home">Home</a></li>
+                        <li class='header__li' onclick="showBurgerMenu()"><a href="#products">Select</a></li>
+                        <li class='header__li' onclick="showBurgerMenu()"><a href="#products">Shop</a></li>
+                    </ul>
+                </nav>
+                <div class="burger burger__none">
+                    <div class="burger__line1"></div>
+                    <div class="burger__line2"></div>
+                    <div class="burger__line3"></div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <main>
+        <section class='content section1 section' id='home'>
+            <div class="section1__left">
+                <h1 class="header h1">New Cafe <br>by <span class="green__color">e4zybot</span></h1>
+                <p class="paragraph">Have time to buy the most harmonious drinks in the <br>new e4zybot coffee and don't forget about the discount!</p>
+                <div class='section1__buttons'>
+                    <a href='#products' class='section1__button1 button__animation'>Select a coffee</a>
+                    <a href='#events' class='section1__button2 button__animation'>More</a>
+                </div>
+                <div class="section1__statistics">
+                    <div class="section1__statistics__item">
+                        <span class="statistics__header">9k<span class='green__color'>+</span></span>
+                        <span class="statistics__paragraph">Premium Users</span>
+                    </div>
+                    <div class="section1__statistics__item">
+                        <span class="statistics__header">2k<span class='green__color'>+</span></span>
+                        <span class="statistics__paragraph">Happy Customers</span>
+                    </div>
+                    <div class="section1__statistics__item">
+                        <span class="statistics__header">28<span class='green__color'>+</span></span>
+                        <span class="statistics__paragraph">Awards Winnings</span>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/coffee.png" alt="starbucks coffee" class='section1__coffee'>
+        </section>
+        <div class="section2 content section">
+            <div class="wehave">
+                <img src="./assets/images/wehave.png" alt="wehave" class="wehave__img">
+                <div class="wehave__item">
+                    <img src="./assets/images/heart.png" alt="heart" class="wehave__item__image">
+                    <span class="wehave__item__header">Tasty</span>
+                    <span class="wehave__item__paragraph">We have the most delicious coffee</span>
+                </div>
+                <div class="wehave__item">
+                    <img src="./assets/images/rocket.png" alt="heart" class="wehave__item__image">
+                    <span class="wehave__item__header">Fast</span>
+                    <span class="wehave__item__paragraph">Our cafe will serve you quickly</span>
+                </div>
+                <div class="wehave__item">
+                    <img src="./assets/images/money.png" alt="heart" class="wehave__item__image">
+                    <span class="wehave__item__header">Available</span>
+                    <span class="wehave__item__paragraph">Cafe will serveat the most pleasant prices</span>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/adavtive1.png" alt="wehave" class='adaptive__img1'>
+        <section class="section3 content section" id="process">
+            <div>
+                <img src="./assets/images/starbucksphoto.png" alt="restaraunt" class='section3__restaraunt'>
+            </div>
+            <div class="section3__right">
+                <h2 class="header  h2">We make <br><span class="green__color">delicious</span></h2>
+                <p class="paragraph">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</p>
+                <a href='https://www.youtube.com/watch?v=jf0ZtZ8CVkk' target='_blank' class='section3__link'>
+                    <img src="./assets/images/arrows1.png" alt="arrows" class='section3__arrows'>
+                    <img src="./assets/images/process.png" alt="cooking process" class='section3__process button__animation'>
+                </a>
+            </div>
+        </section>
+        <section class="section4 content section" id="products">
+            <div class="section4__upper">
+                <h2 class="header  h2">New Our <br><span class="green__color">Products</span></h2>
+                <p class="paragraph">Have time to buy the most harmonious drinks in the new e4zybot coffee and don't forget about the discount!</p>
+            </div>
+            <div class="section4__lower">
+                <img src="./assets/images/products__arrow.png" alt="arrow" class="section4__arrow button__animation">
+                <div class="products">
+                    <div class="product__card">
+                        <img src="./assets/images/coffee3.png" alt="coffee" class="product__image">
+                        <h3 class="product__header">Fast</h3>
+                        <p class="paragraph product__paragraph">Our cafe will serve you quickly</p>
+                        <div class='product__price__wrapper'>
+                            <span class="product__price">7,45$</span>
+                            <span class="product__weight">330 ml</span>
+                            <a href='#' class='product__button button__animation'>Buy product</a>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <img src="./assets/images/coffee2.png" alt="coffee" class="product__image">
+                        <h3 class="product__header">Fast</h3>
+                        <p class="paragraph product__paragraph">Our cafe will serve you quickly</p>
+                        <div class='product__price__wrapper'>
+                            <span class="product__price">7,45$</span>
+                            <span class="product__weight">330 ml</span>
+                            <a href='#' class='product__button button__animation'>Buy product</a>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <img src="./assets/images/coffee1.png" alt="coffee" class="product__image">
+                        <h3 class="product__header">Cappuccino</h3>
+                        <p class="paragraph product__paragraph">Our cafe will serve you quickly</p>
+                        <div class='product__price__wrapper'>
+                            <span class="product__price">7,45$</span>
+                            <span class="product__weight">330 ml</span>
+                            <a href='#' class='product__button button__animation'>Buy product</a>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <img src="./assets/images/coffee3.png" alt="coffee" class="product__image">
+                        <h3 class="product__header">Fast</h3>
+                        <p class="paragraph product__paragraph">Our cafe will serve you quickly</p>
+                        <div class='product__price__wrapper'>
+                            <span class="product__price">7,45$</span>
+                            <span class="product__weight">330 ml</span>
+                            <a href='#' class='product__button button__animation'>Buy product</a>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <img src="./assets/images/coffee2.png" alt="coffee" class="product__image">
+                        <h3 class="product__header">Fast</h3>
+                        <p class="paragraph product__paragraph">Our cafe will serve you quickly</p>
+                        <div class='product__price__wrapper'>
+                            <span class="product__price">7,45$</span>
+                            <span class="product__weight">330 ml</span>
+                            <a href='#' class='product__button button__animation'>Buy product</a>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <img src="./assets/images/coffee1.png" alt="coffee" class="product__image">
+                        <h3 class="product__header">Cappuccino</h3>
+                        <p class="paragraph product__paragraph">Our cafe will serve you quickly</p>
+                        <div class='product__price__wrapper'>
+                            <span class="product__price">7,45$</span>
+                            <span class="product__weight">330 ml</span>
+                            <a href='#' class='product__button button__animation'>Buy product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5 content section" id='events'>
+            <div class='section5__upper'>
+                <h2 class="header  h2">Our New <br><span class="green__color">Events</span></h2>
+                <p class="paragraph">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</p>
+            </div>
+            <img src="./assets/images/sec5arrow.png" alt="arrow" class="sec5__arrow">
+            <div class="section5__lower">
+                <div class='big__events'>
+                    <div class="event__card event__card__big event__card1">
+                        <h3 class="event__header">TWO COFFEE <br>FOR 1 PRICE</h3>
+                        <a href="#" class="event__button button__animation">More</a>
+                    </div>
+                    <div class="event__card event__card__big event__card2">
+                        <h3 class="event__header">TWO COFFEE <br>FOR 1 PRICE</h3>
+                        <a href="#" class="event__button button__animation">More</a>
+                    </div>
+                </div>
+                <div class="little__events">
+                    <div class="event__card event__card__little event__card3">
+                        <h3 class="event__header">FREE COFFEE <br>FOR 3 COFFEE</h3>
+                        <a href="#" class="event__button button__animation">More</a>
+                    </div>
+                    <div class="event__card event__card__little event__card4">
+                        <h3 class="event__header">OUR <br>INSTAGRAM</h3>
+                        <a href="https://www.instagram.com/"  target="_blank" class="event__button button__animation">More</a>
+                    </div>
+                    <div class="event__card event__card__little event__card5">
+                        <h3 class="event__header">WHERE ARE YOU <br>CHOOSE US?</h3>
+                        <a href="#" class="event__button button__animation">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/adaptive2.png" alt="wehave" class='adaptive__img2'>
+        <section class="section6 content section" id='contacts'>
+            <div class="section6__left">
+                <h2 class="header  h2">Our <br><span class="green__color">Contacts</span></h2>
+                <p class="paragraph">Have time to buy the most harmonious drinks in the new e4zybot coffee and don't forget about the discount!</p>
+                <div class="contact__item">
+                    <img src="./assets/images/inst.png" alt="instagram" class="contact__image">
+                    <span class="contact__text">@e4zybot</span>
+                </div>
+                <div class="contact__item">
+                    <img src="./assets/images/phone.png" alt="phone" class="contact__image">
+                    <span class="contact__text">+7-999-999-99-99</span>
+                </div>
+            </div>
+            <img src="./assets/images/sec6.png" alt="restaraunt" class='section6__restaraunt'>
+        </section>
+    </main>
+    <div class="footer__wrapper">
+        <footer class="footer content">
+            <div class="footer__upper">
+                <span class="starbucks__logo">e4zybot</span>
+                <div class="footer__nav">
+                    <div class="footer__nav__item">
+                        <a href="#home" class="footer__nav__link footer__nav__link__active">Main</a>
+                        <a href="#products" class="footer__nav__link">Buy</a>
+                        <a href="#events" class="footer__nav__link">More</a>
+                    </div>
+                    <div class="footer__nav__item">
+                        <a href="#process" class="footer__nav__link footer__nav__link__active">We make</a>
+                        <a href="#process" class="footer__nav__link">Process</a>
+                    </div>
+                    <div class="footer__nav__item">
+                        <a href="#products" class="footer__nav__link footer__nav__link__active">Products</a>
+                        <a href="#products" class="footer__nav__link">Cappuccino</a>
+                        <a href="#products" class="footer__nav__link">Fast</a>
+                    </div>
+                    <div class="footer__nav__item">
+                        <a href="#events" class="footer__nav__link footer__nav__link__active">Events</a>
+                        <a href="#events" class="footer__nav__link">Drinks</a>
+                        <a href="#events" class="footer__nav__link">Eat</a>
+                    </div>
+                    <div class="footer__nav__item">
+                        <a href="#contacts" class="footer__nav__link footer__nav__link__active">Contacts</a>
+                        <a href="#contacts" class="footer__nav__link">Instagram</a>
+                        <a href="#contacts" class="footer__nav__link">Number</a>
+                    </div>
+                </div>
+                <img class="footer__up__btn button__animation" src='./assets/images/upbutton.png' alt='go up'>
+            </div>
+            <div class="footer__lower">
+                <span class="footer__number green__color">+7-999-999-99-99</span>
+                <a href='https://t.me/e4zybot' target="_blank"><img src="./assets/images/inst.png" alt="instagram" class="footer__inst"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
